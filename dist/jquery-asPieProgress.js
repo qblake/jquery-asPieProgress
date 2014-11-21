@@ -266,6 +266,7 @@
             var start = self.now;
             var startTime = getTime();
             var animation = function(time) {
+                time = getTime();
                 var distance = (time - startTime) / self.options.speed;
                 var next = Math.round(distance / 100 * (self.max - self.min));
 
